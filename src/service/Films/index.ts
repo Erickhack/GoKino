@@ -6,7 +6,7 @@ import { getFilsm } from "./interface";
 
 export const getFilms = createAsyncThunk(
   "films/getFilms",
-  async (params: { films: string } | undefined, {}) => {
+  async (params: { Genre?: string; IsTrending?: boolean } | undefined, {}) => {
     try {
       const res = await Axios({
         method: "GET",

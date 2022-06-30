@@ -18,7 +18,7 @@ export const FilmCategories = () => {
 
   useEffect(() => {
     getFilms({
-      films: MainCategoriesID || "",
+      Genre: MainCategoriesID || "",
     });
   }, []);
 

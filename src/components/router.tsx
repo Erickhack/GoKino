@@ -48,14 +48,6 @@ const MainTrending = lazy(() =>
   }))
 );
 
-const MainDisclosure = lazy(() =>
-  import("./feature/Disclosure/MainDisclosure/MainDisclosure").then(
-    (module) => ({
-      default: module.MainDisclosure,
-    })
-  )
-);
-
 const PageNotFound = lazy(() =>
   import("./feature/PageNotFound/PageNotFound").then((module) => ({
     default: module.PageNotFound,
@@ -121,10 +113,6 @@ export const RoutesConfig = () => {
         {
           path: MainUrls.MainTrending,
           element: <MainTrending />,
-        },
-        {
-          path: MainUrls.MainDisclosure,
-          element: <MainDisclosure />,
         },
       ],
     },

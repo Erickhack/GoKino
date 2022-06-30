@@ -27,11 +27,6 @@ export const NavBar = () => {
               <span>Жанр</span>
             </NavLink>
           </li>
-          <li>
-            <Link to={MainUrls.MainDisclosure}>
-              <span>Расписание</span>
-            </Link>
-          </li>
         </ul>
       </nav>
     </div>
