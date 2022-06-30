@@ -56,9 +56,9 @@ export const Film = () => {
             <p>{item.description}</p>
 
             <div className="film-action">
-              <button>
-                <a href={item?.trailer || ""}>Смотреть трейлер</a>
-              </button>
+              <a href={item?.trailer || ""}>
+                <button>Смотреть трейлер</button>
+              </a>
               <ByBilet />
             </div>
           </div>

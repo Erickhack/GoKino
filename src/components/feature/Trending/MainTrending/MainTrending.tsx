@@ -23,7 +23,7 @@ export const MainTrending = () => {
       <div className="films">
         {items.map((film) => (
           <div className="card" key={film.id}>
-            <Link to={film.id}>
+            <Link to={"../" + film.id}>
               <img
                 src={`${process.env.REACT_APP_BASE_URL}${film.imagePath}`}
                 className="card-img-top"
