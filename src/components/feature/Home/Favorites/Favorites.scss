@@ -1,0 +1,41 @@
+@use "../../../GlobalStyle.scss" as *;
+
+.favorites-secti0on {
+  .films {
+    gap: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    font-size: 14px;
+
+    .card {
+      background-color: $BoldBLack;
+      margin: 20px 0;
+      width: 15rem;
+
+      .card-img-top {
+        max-height: 300px;
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin: 0;
+        }
+
+        button {
+          justify-self: center;
+        }
+
+        .card-title {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .card-text {
+          color: white;
+        }
+      }
+    }
+  }
+}

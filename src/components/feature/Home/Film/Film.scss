@@ -1,0 +1,48 @@
+@use "../../../GlobalStyle.scss" as *;
+
+.section-film {
+  display: grid;
+  grid-template: 1fr / 300px 1fr;
+  gap: 30px;
+
+  .film-aside {
+    max-width: 300px;
+    color: white;
+    img {
+      width: 100%;
+    }
+    dl {
+      display: grid;
+      grid-template: 1fr 1fr /1fr 1fr;
+    }
+  }
+  .film-main {
+    p {
+      color: white;
+    }
+
+    iframe {
+      width: 100%;
+      height: fit-content;
+    }
+
+    .film-action {
+      button {
+        a {
+          text-decoration: none;
+        }
+
+        color: white;
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+        margin: 10px 0;
+        border: 1px solid $LightGray;
+        background-color: transparent;
+      }
+      .by-bilet {
+        border-color: $MildBlue;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use "../../GlobalStyle.scss" as *;
+
+.def-header {
+  div {
+    display: flex;
+    justify-content: space-between;
+    .search-movie {
+      width: 60%;
+      input {
+        border-radius: 50px;
+        background-color: $MildBlack;
+        border: none;
+        color: white;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      button {
+        border: none;
+        border-radius: 50px;
+        background-color: $MildBlack;
+        height: 50px;
+        width: 100%;
+      }
+    }
+  }
+}

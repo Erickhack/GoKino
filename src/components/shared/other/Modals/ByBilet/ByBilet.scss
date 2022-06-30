@@ -1,0 +1,24 @@
+@use "../../../../GlobalStyle.scss" as *;
+
+.modal-by-bilet {
+  display: flex;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  .modal-content {
+    .modal-header {
+      button {
+        width: max-content;
+        height: max-content;
+      }
+    }
+    background-color: $LargeBlack;
+    width: 800px;
+    height: max-content;
+  }
+}

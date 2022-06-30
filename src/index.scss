@@ -1,0 +1,17 @@
+@import "./assets/css/bootstrap.min.css";
+@import "./assets/css/bootstrap.rtl.min.css";
+@import url("react-toastify/dist/ReactToastify.css");
+
+html,
+body {
+  font-size: 18px;
+  font-family: "ALS Hauss VF";
+  * {
+    outline: none;
+  }
+}
+
+@font-face {
+  font-family: "ALS Hauss VF";
+  src: url("assets/fonts/ALS_Hauss_VF_1.1.ttf");
+}

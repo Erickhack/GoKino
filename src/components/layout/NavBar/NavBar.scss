@@ -1,0 +1,48 @@
+@use "../../GlobalStyle.scss" as *;
+
+.layout-nav-bar {
+  height: 100%;
+
+  .logo-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    a {
+      text-decoration: none;
+    }
+  }
+  nav {
+    ul {
+      list-style: none;
+      padding-right: 0;
+      li {
+        margin: 20px 0;
+        height: 50px;
+
+        .selected {
+          background-color: $LargeBlack;
+        }
+        .unselected {
+          background-color: none;
+        }
+
+        a {
+          &:hover {
+            background-color: $LargeBlack;
+          }
+
+          border-radius: 30px 0 0 30px;
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          font-weight: 400;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

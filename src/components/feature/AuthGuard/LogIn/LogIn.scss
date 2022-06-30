@@ -1,0 +1,71 @@
+@use "../../../GlobalStyle.scss" as *;
+
+$alifdefauldcolor: #39b980;
+$font: #f9fafb;
+
+.login-section {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  .form-auth-user {
+    background-color: $MildBlack;
+    border-radius: 13px;
+    padding: 56px 76px;
+    margin-top: 63px;
+    .form-child-elements {
+      input[type="email"],
+      input[type="password"],
+      input[type="text"] {
+        padding-left: 30px;
+      }
+      .form-label {
+        color: white;
+      }
+      .grout-input-div {
+        margin: 44px 0;
+        padding: 0 20px;
+        .form-check-styled {
+          input[type="checkbox"] {
+            margin-right: 10px;
+          }
+          input[type="checkbox"]:checked {
+            background-color: $alifdefauldcolor;
+            border-color: $alifdefauldcolor;
+          }
+        }
+        .log-in-email {
+          .icon-user {
+            display: flex;
+            position: absolute;
+            bottom: 5px;
+            left: 10px;
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .log-in-password {
+          .icon-eye {
+            display: flex;
+            position: absolute;
+            bottom: 5px;
+            left: 10px;
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      .log-self-color-btn {
+        background-color: $BoldBLack;
+        span {
+          color: white;
+        }
+        height: 40px;
+      }
+    }
+    .header-form {
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 24px;
+    }
+  }
+}
